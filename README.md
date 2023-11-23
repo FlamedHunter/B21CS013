@@ -169,9 +169,18 @@ In XV6, memory paging involves a two-level page table translating virtual to phy
 3) cat: Concatenates and displays the contents of files, useful for viewing text files or combining them.
 
 #### Answer 17:
+In XV6, process synchronization is vital for managing shared resources. Locks control access to critical sections, ensuring exclusive execution, while condition variables facilitate communication between processes, promoting coordination. These mechanisms prevent race conditions and enhance data integrity in a multi-process environment, improving the operating system's reliability.
 
 #### Answer 18:
+In XV6, interrupts are vital for handling external events. They trigger interrupt service routines, temporarily halting processes to efficiently manage time-sensitive tasks or external events. This responsiveness is crucial for multitasking, ensuring the operating system can swiftly address concurrent processes and maintain system efficiency.
 
 #### Answer 19:
+Virtual memory in XV6 employs demand paging and page replacement algorithms, offering an illusion of a larger address space. This approach optimizes physical memory use, supports larger programs, ensures process isolation, and simplifies memory management. The benefits include flexibility, efficient resource utilization, and enhanced overall system performance.
 
 #### Answer 20: 
+1) BIOS/UEFI Initialization: BIOS initializes hardware and performs a Power-On Self-Test (POST).
+2) Bootloader Execution: The BIOS/UEFI locates and executes a bootloader (commonly GRUB). The bootloader loads the XV6 kernel from the filesystem into memory.
+3) Kernel Initialization: The XV6 kernel initializes essential data structures, sets up memory, and configures devices.
+4) User Space Initiation: The kernel launches the user-space init process, the first user-level process, responsible for system initialization.
+5) Idle Loop: The system enters an idle loop, waiting for events like interrupts or system calls.
+6) User Interaction: Once initialized, the user can interact with the XV6 operating system, executing commands and running processes.
