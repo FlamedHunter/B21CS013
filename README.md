@@ -133,4 +133,45 @@ Welcome to the XV Quiz for CSL 3030 - Operating Systems!
 
 #### Answer 8: A
 
-#### Answer 9: 
+#### Answer 9: D
+
+#### Answer 10: B
+
+#### Answer 11: C
+
+#### Answer 12: 
+In XV6 operating system, process can be in several states as they execute and interact with the system. The main process states are:
+1) Unused
+2) Ready
+3) Running
+4) sleeping
+5) zombie
+
+#### Answer 13:
+ xv6 employs a hierarchical file system structure, similar to Unix, with directories, files, and inodes.
+ Inodes are used to store metadata about files and their data block locations.
+ xv6 supports essential file operations, including file creation, deletion, reading, and writing.
+ It provides a system call interface for user processes to interact with the file system
+ The file system abstracts hardware-specific details, ensuring portability and ease of maintenance.
+ It facilitates efficient and consistent data storage and retrieval.
+
+
+#### Answer 14:
+System calls are essential interfaces for user-level programs to request services from the kernel, such as file operations and process management. eg fork()
+Library function call are the calls which execute in the user node and does not require any kind of special permission such as admin permission. eg. printf() in C
+
+#### Answer 15:
+In XV6, memory paging involves a two-level page table translating virtual to physical addresses, ensuring efficient memory management. Paging benefits include process isolation, simplified allocation, virtual memory implementation, and optimized resource usage by swapping pages between disk and physical memory, enhancing system performance and stability.
+
+#### Answer 16:
+1) ls: Lists directory contents, providing information about files and directories.
+2) cd: Changes the current working directory, allowing navigation through the file system.
+3) cat: Concatenates and displays the contents of files, useful for viewing text files or combining them.
+
+#### Answer 17:
+
+#### Answer 18:
+
+#### Answer 19:
+
+#### Answer 20: 
